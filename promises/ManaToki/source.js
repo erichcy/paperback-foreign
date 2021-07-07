@@ -342,7 +342,7 @@ const MANATOKI_DOMAIN = 'https://manatoki95.net';
 const MANATOKI_COMIC = MANATOKI_DOMAIN + '/comic/';
 const method = 'GET';
 exports.ManaTokiInfo = {
-    version: '1.0.3',
+    version: '1.0.4',
     name: '마나토끼',
     icon: 'icon.png',
     author: 'nar1n',
@@ -620,7 +620,7 @@ const parseChapters = ($, mangaId) => {
     var _a, _b, _c;
     const chapters = [];
     for (const chapter of $('li', $('ul.list-body', 'div.serial-list').first()).toArray()) {
-        const name = $('a', chapter).first().text().split('\n')[5].split(' ').filter(x => x != '').slice(0, -1).join(' ').trim();
+        const name = $('a', chapter).children().remove().end().text().trim();
         const id = (_c = (_b = (_a = $('a', chapter).first().attr('href')) === null || _a === void 0 ? void 0 : _a.split('/').pop()) === null || _b === void 0 ? void 0 : _b.split('?')[0]) !== null && _c !== void 0 ? _c : '';
         const time = parseTime($('div.wr-date.hidden-xs', chapter).text().replace('\n', '').trim());
         chapters.push(createChapter({
