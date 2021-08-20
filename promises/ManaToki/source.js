@@ -338,11 +338,11 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.ManaToki = exports.ManaTokiInfo = void 0;
 const paperback_extensions_common_1 = require("paperback-extensions-common");
 const ManaTokiParser_1 = require("./ManaTokiParser");
-const MANATOKI_DOMAIN = 'https://manatoki95.net';
+const MANATOKI_DOMAIN = 'https://manatoki96.net';
 const MANATOKI_COMIC = MANATOKI_DOMAIN + '/comic/';
 const method = 'GET';
 exports.ManaTokiInfo = {
-    version: '1.0.4',
+    version: '1.0.5',
     name: '마나토끼',
     icon: 'icon.png',
     author: 'nar1n',
