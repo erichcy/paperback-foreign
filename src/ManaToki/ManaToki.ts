@@ -12,13 +12,13 @@ import {
 } from "paperback-extensions-common"
 import {parseChapterDetails, parseChapters, parseHomeUpdates, parseHomeList, parseMangaDetails, parseSearch, parseUpdatedMangas} from "./ManaTokiParser"
 
-const MANATOKI_DOMAIN = 'https://manatoki95.net'
+const MANATOKI_DOMAIN = 'https://manatoki96.net'
 const MANATOKI_COMIC = MANATOKI_DOMAIN + '/comic/'
 const method = 'GET'
 
 
 export const ManaTokiInfo: SourceInfo = {
-    version: '1.0.4',
+    version: '1.0.5',
     name: '마나토끼',
     icon: 'icon.png',
     author: 'nar1n',
